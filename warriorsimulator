@@ -1,0 +1,389 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Lmao Gaming", HidePremium = false, SaveConfig = true, ConfigFolder = "Test"})
+    
+
+--Values
+getgenv().killAura = true
+getgenv().autoQuest = true
+getgenv().autoTrainvip1 = true
+getgenv().autoTrainvip2 = true
+getgenv().autoTrainvip3 = true
+getgenv().autoTrainvip4 = true
+getgenv().autoTrainvip5 = true
+getgenv().autoTrainvip6 = true
+getgenv().autoTrainvip7 = true
+getgenv().autoJoinw1 = true
+getgenv().autoJoinw2 = true
+getgenv().autoJoinw3 = true
+getgenv().autoJoinw4 = true
+getgenv().autoJoinw5 = true
+getgenv().autoJoinw6 = true
+getgenv().autoJoinw7 = true
+getgenv().chestBR = true
+
+--Functions
+function chestBR()
+    while getgenv().chestBR == true do
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BackRoom"):WaitForChild("GetCollectedChestSize"):InvokeServer()
+        wait(.0000000000001)
+    end
+end
+
+function killAura()
+    while getgenv().killAura == true do
+        game:GetService("ReplicatedStorage").Remotes.Weapon.TakeDamage:FireServer()
+        wait(.0000000000001)
+    end
+end
+
+function autoJoinw1()
+    while getgenv().autoJoinw1 == true do
+        game:GetService("ReplicatedStorage").Remotes.Match.Join:InvokeServer(1)
+        wait(5)
+    end
+end
+
+function autoJoinw2()
+    while getgenv().autoJoinw2 == true do
+        game:GetService("ReplicatedStorage").Remotes.Match.Join:InvokeServer(2)
+        wait(5)
+    end
+end
+
+function autoJoinw3()
+    while getgenv().autoJoinw3 == true do
+        game:GetService("ReplicatedStorage").Remotes.Match.Join:InvokeServer(3)
+        wait(5)
+    end
+end
+function autoJoinw4()
+    while getgenv().autoJoinw4 == true do
+        game:GetService("ReplicatedStorage").Remotes.Match.Join:InvokeServer(4)
+        wait(5)
+    end
+end
+
+function autoJoinw5()
+    while getgenv().autoJoinw5 == true do
+        game:GetService("ReplicatedStorage").Remotes.Match.Join:InvokeServer(5)
+        wait(5)
+    end
+end
+
+function autoJoinw6()
+    while getgenv().autoJoinw6 == true do
+        game:GetService("ReplicatedStorage").Remotes.Match.Join:InvokeServer(6)
+        wait(5)
+    end
+end
+
+function autoJoinw7()
+    while getgenv().autoJoinw7 == true do
+        game:GetService("ReplicatedStorage").Remotes.Match.Join:InvokeServer(7)
+        wait(5)
+    end
+end
+
+function autoQuest()
+    while getgenv().autoQuest == true do
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Battle"):WaitForChild("GetMission"):FireServer(1)
+        wait(3)
+    end
+end
+
+function autoTrainvip7()
+    while getgenv().autoTrainvip7 == true do
+        local args = {
+            [1] = false,
+            [2] = {
+                [1] = workspace:WaitForChild("Train"):WaitForChild("7"):WaitForChild("6028"):WaitForChild("HitBox")
+            }
+        }
+        
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Skill"):WaitForChild("ServerBehaviour"):FireServer(unpack(args))
+        wait(.000000000000001)
+    end
+end
+
+function autoTrainvip6()
+    while getgenv().autoTrainvip6 == true do
+        local args = {
+            [1] = false,
+            [2] = {
+                [1] = workspace:WaitForChild("Train"):WaitForChild("6"):WaitForChild("6024"):WaitForChild("HitBox")
+            }
+        }
+        
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Skill"):WaitForChild("ServerBehaviour"):FireServer(unpack(args))
+        wait(.000000000000001)
+    end
+end
+
+function autoTrainvip5()
+    while getgenv().autoTrainvip5 == true do
+        local args = {
+            [1] = false,
+            [2] = {
+                [1] = workspace:WaitForChild("Train"):WaitForChild("5"):WaitForChild("6020"):WaitForChild("HitBox")
+            }
+        }
+        
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Skill"):WaitForChild("ServerBehaviour"):FireServer(unpack(args))
+        wait(.000000000000001)
+    end
+end
+
+function autoTrainvip4()
+    while getgenv().autoTrainvip4 == true do
+        local args = {
+            [1] = false,
+            [2] = {
+                [1] = workspace:WaitForChild("Train"):WaitForChild("4"):WaitForChild("6016"):WaitForChild("HitBox")
+            }
+        }
+        
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Skill"):WaitForChild("ServerBehaviour"):FireServer(unpack(args))
+        wait(.000000000000001)
+    end
+end
+
+function autoTrainvip3()
+    while getgenv().autoTrainvip3 == true do
+        local args = {
+            [1] = false,
+            [2] = {
+                [1] = workspace:WaitForChild("Train"):WaitForChild("3"):WaitForChild("6012"):WaitForChild("HitBox")
+            }
+        }
+        
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Skill"):WaitForChild("ServerBehaviour"):FireServer(unpack(args))
+        wait(.000000000000001)
+    end
+end
+
+function autoTrainvip2()
+    while getgenv().autoTrainvip2 == true do
+        local args = {
+            [1] = false,
+            [2] = {
+                [1] = workspace:WaitForChild("Train"):WaitForChild("2"):WaitForChild("6008"):WaitForChild("HitBox")
+            }
+        }
+        
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Skill"):WaitForChild("ServerBehaviour"):FireServer(unpack(args))
+        wait(.000000000000001)
+    end
+end
+
+function autoTrainvip1()
+    while getgenv().autoTrainvip1 == true do
+        local args = {
+            [1] = false,
+            [2] = {
+                [1] = workspace:WaitForChild("Train"):WaitForChild("1"):WaitForChild("6004"):WaitForChild("HitBox")
+            }
+        }
+        
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Skill"):WaitForChild("ServerBehaviour"):FireServer(unpack(args))
+        wait(.000000000000001)
+    end
+end
+
+-- Tabs
+local farmTab = Window:MakeTab({
+	Name = "AutoFarm",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local trainTab = Window:MakeTab({
+	Name = "Auto Train",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local fightTab = Window:MakeTab({
+	Name = "Auto Fight",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Toggles
+farmTab:AddToggle({
+	Name = "Kill Aura",
+	Default = false,
+	Callback = function(Value)
+		getgenv().killAura = Value
+        killAura()
+	end    
+})
+
+farmTab:AddToggle({
+	Name = "Chest Back Room",
+	Default = false,
+	Callback = function(Value)
+		getgenv().chestBR = Value
+        chestBR()
+	end
+})
+
+trainTab:AddToggle({
+	Name = "vip w1",
+	Default = false,
+	Callback = function(Value)
+		getgenv().autoTrainvip1 = Value
+        autoTrainvip1()
+	end    
+})
+
+trainTab:AddToggle({
+	Name = "vip w2",
+	Default = false,
+	Callback = function(Value)
+		getgenv().autoTrainvip2 = Value
+        autoTrainvip2()
+	end    
+})
+
+trainTab:AddToggle({
+	Name = "vip w3",
+	Default = false,
+	Callback = function(Value)
+		getgenv().autoTrainvip3 = Value
+        autoTrainvip3()
+	end    
+})
+
+trainTab:AddToggle({
+	Name = "vip w4",
+	Default = false,
+	Callback = function(Value)
+		getgenv().autoTrainvip4 = Value
+        autoTrainvip4()
+	end    
+})
+
+trainTab:AddToggle({
+	Name = "vip w5",
+	Default = false,
+	Callback = function(Value)
+		getgenv().autoTrainvip5 = Value
+        autoTrainvip5()
+	end    
+})
+
+trainTab:AddToggle({
+	Name = "vip w6",
+	Default = false,
+	Callback = function(Value)
+		getgenv().autoTrainvip6 = Value
+        autoTrainvip6()
+	end    
+})
+
+
+trainTab:AddToggle({
+	Name = "vip w7",
+	Default = false,
+	Callback = function(Value)
+		getgenv().autoTrainvip7 = Value
+        autoTrainvip7()
+	end    
+})
+
+
+farmTab:AddToggle({
+	Name = "Auto Quest",
+	Default = false,
+	Callback = function(Value)
+        print(value)
+		getgenv().autoQuest = Value
+        autoQuest()
+	end    
+})
+
+fightTab:AddToggle({
+	Name = "world 1",
+	Default = false,
+	Callback = function(Value)
+		getgenv().autoJoinw1 = Value
+        autoJoinw1()
+	end    
+})
+
+fightTab:AddToggle({
+	Name = "world 2",
+	Default = false,
+	Callback = function(Value)
+		getgenv().autoJoinw2 = Value
+        autoJoinw2()
+	end    
+})
+
+fightTab:AddToggle({
+	Name = "world 3",
+	Default = false,
+	Callback = function(Value)
+		getgenv().autoJoinw3 = Value
+        autoJoinw3()
+	end    
+})
+
+fightTab:AddToggle({
+	Name = "world 4",
+	Default = false,
+	Callback = function(Value)
+		getgenv().autoJoinw4 = Value
+        autoJoinw4()
+	end    
+})
+
+fightTab:AddToggle({
+	Name = "world 5",
+	Default = false,
+	Callback = function(Value)
+		getgenv().autoJoinw5 = Value
+        autoJoinw5()
+	end    
+})
+
+fightTab:AddToggle({
+	Name = "world 6",
+	Default = false,
+	Callback = function(Value)
+		getgenv().autoJoinw6 = Value
+        autoJoinw6()
+	end    
+})
+
+fightTab:AddToggle({
+	Name = "world 7",
+	Default = false,
+	Callback = function(Value)
+		getgenv().autoJoinw7 = Value
+        autoJoinw7()
+	end    
+})
+
+fightTab:AddDropdown({
+	Name = "Select World",
+	Default = "1",
+	Options = {"1", "2","3","4","5","6","7"},
+	Callback = function(Value)
+		getgenv().selectworld = Value
+        print(getgenv().selectworld)
+	end    
+})
+
+trainTab:AddDropdown({
+	Name = "Select Lvl",
+	Default = "",
+	Options = {"1", "2","3","4","5","6","7"},
+	Callback = function(Value)
+		getgenv().selectworld = Value
+        print(getgenv().selectworld)
+	end    
+})
+
+
+OrionLib:Init()
